@@ -4,6 +4,7 @@ import ProductItem from "./ProductItem";
 
 
 //Task 5 implementing keys
+//The ProductList component is responsible for rendering a list of products passed down as props.
 const ProductList = ({ products }) => {
   return (
     <div>

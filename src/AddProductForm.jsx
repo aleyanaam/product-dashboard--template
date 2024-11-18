@@ -1,5 +1,6 @@
+// Task 6
 import React, { useState } from "react";
-// Task 6: Create the AddProductForm Component
+
 const AddProductForm = ({ addProduct }) => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -9,6 +10,7 @@ const AddProductForm = ({ addProduct }) => {
     e.preventDefault();
     const newProduct = { name, price: parseFloat(price), description };
     addProduct(newProduct);
+    //After the form is submitted it resets the form fields to empty strings
     setName("");
     setPrice("");
     setDescription("");
