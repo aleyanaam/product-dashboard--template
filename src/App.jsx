@@ -11,6 +11,11 @@ const App = () => {
     { id: 3, name: "Stove", price: 699.99, description: "High quality electric stove" },
   ]);
 
+// Function to add a new product
+const addProduct = (newProduct) => {
+  setProducts([...products, { ...newProduct, id: products.length + 1 }]);
+};
+
   return (
     <div>
       <h1>Product Dashboard</h1>
